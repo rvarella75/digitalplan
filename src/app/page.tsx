@@ -198,48 +198,48 @@ export default function Home() {
       <section id="trust" className="content-container py-16">
         <div className="text-center">
           <h3 className="text-lg font-medium text-gray-600 mb-8">Trusted by businesses using leading digital tools</h3>
-          <div className="flex flex-wrap justify-center items-center gap-12 opacity-60">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-12 items-center opacity-60">
             <Image 
               src="/shopify-logo.png" 
               alt="Shopify" 
               width={120} 
               height={40} 
-              className="h-8 w-auto object-contain"
+              className="h-6 md:h-8 w-auto object-contain mx-auto"
             />
             <Image 
               src="/hubspot-logo.png" 
               alt="HubSpot" 
               width={120} 
               height={40} 
-              className="h-8 w-auto object-contain"
+              className="h-6 md:h-8 w-auto object-contain mx-auto"
             />
             <Image 
               src="/zapier-logo.png" 
               alt="Zapier" 
               width={120} 
               height={40} 
-              className="h-8 w-auto object-contain"
+              className="h-6 md:h-8 w-auto object-contain mx-auto"
             />
             <Image 
               src="/quickbooks-logo.png" 
               alt="QuickBooks" 
               width={120} 
               height={40} 
-              className="h-8 w-auto object-contain"
+              className="h-6 md:h-8 w-auto object-contain mx-auto"
             />
             <Image 
               src="/salesforce-logo.png" 
               alt="Salesforce" 
               width={120} 
               height={40} 
-              className="h-8 w-auto object-contain"
+              className="h-6 md:h-8 w-auto object-contain mx-auto"
             />
             <Image 
               src="/make-logo.png" 
               alt="Make" 
               width={120} 
               height={40} 
-              className="h-8 w-auto object-contain"
+              className="h-6 md:h-8 w-auto object-contain mx-auto"
             />
           </div>
         </div>
@@ -248,13 +248,13 @@ export default function Home() {
       {/* Testimonials Section */}
       <section id="testimonials" className="content-container py-24">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Testimonials</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Testimonials</h2>
+          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
             See what our clients say about their digital transformation journey
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <Card className="p-6 bg-white shadow-lg border-blue-200">
             <div className="flex items-center mb-4">
               <Image 
@@ -302,16 +302,16 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section id="about" className="h-[50vh] flex items-center bg-gray-50">
+      <section id="about" className="py-24 bg-gray-50">
         <div className="content-container w-full">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Why SMBs chose to work with us</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why SMBs chose to work with us</h2>
+          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
             We don&apos;t just build solutions — we partner with you for continuous improvement
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 max-w-5xl mx-auto">
           <Card className="text-center hover:shadow-lg transition-shadow bg-blue-50/50 border-blue-100">
             <CardHeader>
               <div className="mx-auto w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mb-6">
@@ -362,8 +362,8 @@ export default function Home() {
         <div className="content-container w-full text-center">
           <Card className="w-full bg-transparent text-white border-0 shadow-none">
           <CardHeader className="space-y-4">
-            <CardTitle className="text-4xl font-bold">Ready to Transform Your Business?</CardTitle>
-            <CardDescription className="text-blue-100 text-lg leading-relaxed">
+            <CardTitle className="text-3xl md:text-4xl font-bold">Ready to Transform Your Business?</CardTitle>
+            <CardDescription className="text-blue-100 text-base md:text-lg leading-relaxed">
               Small businesses like yours are already discovering the benefits of digital innovation. Start your journey today.
             </CardDescription>
           </CardHeader>
