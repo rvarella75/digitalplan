@@ -11,7 +11,7 @@ export default function FormPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Get Your Digital Transformation Plan</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Tell us about your business and we'll create a personalized roadmap for your digital transformation journey.
+            Tell us about your business and we&apos;ll create a personalized roadmap for your digital transformation journey.
           </p>
         </div>
         <MultiStepForm />

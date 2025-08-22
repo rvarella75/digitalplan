@@ -62,7 +62,7 @@ export function MultiStepForm() {
     emailConsent: false
   })
 
-  const updateFormData = (field: keyof FormData, value: any) => {
+  const updateFormData = (field: keyof FormData, value: string | string[]) => {
     setFormData(prev => ({ ...prev, [field]: value }))
     
     // Check email validity when email field is updated
@@ -275,7 +275,7 @@ export function MultiStepForm() {
             </div>
 
             <div>
-              <Label htmlFor="businessGoal">What's your primary business goal?</Label>
+              <Label htmlFor="businessGoal">What&apos;s your primary business goal?</Label>
               <Select value={formData.businessGoal} onValueChange={(value) => updateFormData('businessGoal', value)}>
                 <SelectTrigger>
                   <SelectValue placeholder="Select your primary goal" />
@@ -310,7 +310,7 @@ export function MultiStepForm() {
         return (
           <div className="space-y-6">
             <div>
-              <Label htmlFor="budget">What's your budget for digital transformation?</Label>
+              <Label htmlFor="budget">What&apos;s your budget for digital transformation?</Label>
               <Select value={formData.budgetRange} onValueChange={(value) => updateFormData('budgetRange', value)}>
                 <SelectTrigger>
                   <SelectValue placeholder="Select budget range" />

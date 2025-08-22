@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
@@ -24,10 +25,10 @@ const handleBookConsultation = async () => {
       // Fallback to direct Calendly URL if webhook fails
       window.open('https://calendly.com/d/cw2x-p5n-5rf/30-ai-automation-consultation', '_blank', 'noopener,noreferrer');
     }
-  } catch (error) {
-    // Fallback to direct Calendly URL if webhook fails
-    window.open('https://calendly.com/d/cw2x-p5n-5rf/30-ai-automation-consultation', '_blank', 'noopener,noreferrer');
-  }
+                  } catch {
+                  // Fallback to direct Calendly URL if webhook fails
+                  window.open('https://calendly.com/d/cw2x-p5n-5rf/30-ai-automation-consultation', '_blank', 'noopener,noreferrer');
+                }
 };
 
 const handleNavigation = (sectionId: string) => {
@@ -51,7 +52,7 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <Image 
                 src="/2.png" 
                 alt="ProFuture Consulting Logo" 
@@ -59,7 +60,7 @@ export function Navigation() {
                 height={202} 
                 className="h-10 w-auto"
               />
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}

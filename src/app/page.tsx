@@ -19,8 +19,7 @@ import {
   Handshake,
   FileText,
   Zap,
-  CheckCircle,
-  Play
+  CheckCircle
 } from "lucide-react"
 
 export default function Home() {
@@ -274,7 +273,7 @@ export default function Home() {
               </div>
             </div>
             <p className="text-gray-700 mb-4 italic">
-              "We were looking for a secure, accurate, and agile automation for our remote technical support system. ProFuture delivered a highly efficient solution that reduced our human labor costs and achieved all the expected results."
+              &ldquo;We were looking for a secure, accurate, and agile automation for our remote technical support system. ProFuture delivered a highly efficient solution that reduced our human labor costs and achieved all the expected results.&rdquo;
             </p>
           </Card>
 
@@ -296,7 +295,7 @@ export default function Home() {
               </div>
             </div>
             <p className="text-gray-700 mb-4 italic">
-              "ProFuture delivered exactly what we needed — automations that saved us time and made our operations much smoother."
+              &ldquo;ProFuture delivered exactly what we needed — automations that saved us time and made our operations much smoother.&rdquo;
             </p>
           </Card>
         </div>
@@ -308,7 +307,7 @@ export default function Home() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Why SMBs chose to work with us</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            We don't just build solutions — we partner with you for continuous improvement
+            We don&apos;t just build solutions — we partner with you for continuous improvement
           </p>
         </div>
         

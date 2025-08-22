@@ -1,11 +1,10 @@
 "use client"
 
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { Download, Calendar, CheckCircle, Star, FileText, Zap, Users } from "lucide-react"
+import { Calendar, CheckCircle, Star, FileText, Zap, Users } from "lucide-react"
 
 export default function ThankYouPage() {
   return (
@@ -21,10 +20,10 @@ export default function ThankYouPage() {
             </div>
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Your personalized plan is on the way!</h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We've analyzed your business needs and created a comprehensive digital transformation roadmap tailored specifically for you.
+              We&apos;ve analyzed your business needs and created a comprehensive digital transformation roadmap tailored specifically for you.
             </p>
             <p className="text-sm text-gray-500 mt-4 max-w-2xl mx-auto font-semibold">
-              If you don't receive the email within 5 minutes, please check your spam folder.
+              If you don&apos;t receive the email within 5 minutes, please check your spam folder.
             </p>
           </div>
 
@@ -81,7 +80,7 @@ export default function ThankYouPage() {
                   } else {
                     window.open('https://calendly.com/d/cw2x-p5n-5rf/30-ai-automation-consultation', '_blank', 'noopener,noreferrer');
                   }
-                } catch (error) {
+                } catch {
                   window.open('https://calendly.com/d/cw2x-p5n-5rf/30-ai-automation-consultation', '_blank', 'noopener,noreferrer');
                 }
               }}
@@ -132,7 +131,7 @@ export default function ThankYouPage() {
                 </div>
               </div>
               <blockquote className="text-lg text-gray-700 italic text-center mb-4">
-                "ProFuture's digital transformation plan gave us a clear roadmap that we could actually implement. Within 3 months, we automated 60% of our manual processes."
+                &ldquo;ProFuture&apos;s digital transformation plan gave us a clear roadmap that we could actually implement. Within 3 months, we automated 60% of our manual processes.&rdquo;
               </blockquote>
               <div className="text-center">
                 <p className="font-semibold text-gray-900">Sarah Johnson</p>
