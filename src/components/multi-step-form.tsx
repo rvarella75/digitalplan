@@ -62,7 +62,7 @@ export function MultiStepForm() {
     emailConsent: false
   })
 
-  const updateFormData = (field: keyof FormData, value: string | string[] | boolean) => {
+  const updateFormData = (field: keyof FormData, value: string | string[] | boolean | number) => {
     setFormData(prev => ({ ...prev, [field]: value }))
     
     // Check email validity when email field is updated
