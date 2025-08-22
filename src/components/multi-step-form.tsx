@@ -62,11 +62,11 @@ export function MultiStepForm() {
     emailConsent: false
   })
 
-  const updateFormData = (field: keyof FormData, value: string | string[]) => {
+  const updateFormData = (field: keyof FormData, value: string | string[] | boolean) => {
     setFormData(prev => ({ ...prev, [field]: value }))
     
     // Check email validity when email field is updated
-    if (field === 'email') {
+    if (field === 'email' && typeof value === 'string') {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
       setIsEmailValid(emailRegex.test(value))
     }
