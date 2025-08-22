@@ -30,7 +30,7 @@ export default function ThankYouPage() {
           {/* Plan Overview */}
           <Card className="mb-12 bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold text-gray-900">What's included in your plan:</CardTitle>
+              <CardTitle className="text-2xl font-bold text-gray-900">What&apos;s included in your plan:</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-3 gap-6">
