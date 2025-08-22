@@ -139,50 +139,50 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section id="benefits" className="h-[50vh] flex items-center bg-gray-50">
+      <section id="benefits" className="py-16 md:py-24 bg-gray-50">
         <div className="content-container w-full">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Benefits</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Benefits</h2>
+          <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
             Why choose ProFuture Consulting for your digital transformation
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 lg:gap-12 max-w-5xl mx-auto">
           <Card className="text-center hover:shadow-lg transition-shadow bg-blue-50/50 border-blue-100">
-            <CardHeader>
-              <div className="mx-auto w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                <Target className="h-10 w-10 text-blue-600" />
+            <CardHeader className="pb-4">
+              <div className="mx-auto w-16 h-16 md:w-20 md:h-20 bg-blue-100 rounded-full flex items-center justify-center mb-4 md:mb-6">
+                <Target className="h-8 w-8 md:h-10 md:w-10 text-blue-600" />
               </div>
-              <CardTitle className="text-2xl font-semibold">Personalized Strategy</CardTitle>
+              <CardTitle className="text-xl md:text-2xl font-semibold">Personalized Strategy</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-base leading-relaxed">
+              <CardDescription className="text-sm md:text-base leading-relaxed">
                 A roadmap tailored to your industry, size, and goals.
               </CardDescription>
             </CardContent>
           </Card>
 
           <Card className="text-center hover:shadow-lg transition-shadow bg-green-50/50 border-green-100">
-            <CardHeader>
-              <div className="mx-auto w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6">
-                <TrendingUp className="h-10 w-10 text-green-600" />
+            <CardHeader className="pb-4">
+              <div className="mx-auto w-16 h-16 md:w-20 md:h-20 bg-green-100 rounded-full flex items-center justify-center mb-4 md:mb-6">
+                <TrendingUp className="h-8 w-8 md:h-10 md:w-10 text-green-600" />
               </div>
-              <CardTitle className="text-2xl font-semibold">Proven Approaches</CardTitle>
+              <CardTitle className="text-xl md:text-2xl font-semibold">Proven Approaches</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-base leading-relaxed">
+              <CardDescription className="text-sm md:text-base leading-relaxed">
                 Best practices from successful transformations across multiple industries.
               </CardDescription>
             </CardContent>
           </Card>
 
           <Card className="text-center hover:shadow-lg transition-shadow bg-purple-50/50 border-purple-100">
-            <CardHeader>
-              <div className="mx-auto w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mb-6">
-                <Users className="h-10 w-10 text-purple-600" />
+            <CardHeader className="pb-4">
+              <div className="mx-auto w-16 h-16 md:w-20 md:h-20 bg-purple-100 rounded-full flex items-center justify-center mb-4 md:mb-6">
+                <Users className="h-8 w-8 md:h-10 md:w-10 text-purple-600" />
               </div>
-              <CardTitle className="text-2xl font-semibold">Expert Guidance</CardTitle>
+              <CardTitle className="text-xl md:text-2xl font-semibold">Expert Guidance</CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription className="text-base leading-relaxed">
