@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
-import { Mail, Linkedin, Twitter, Facebook } from "lucide-react"
+import { Mail, Linkedin, Facebook } from "lucide-react"
 
 export function Footer() {
   return (
@@ -26,14 +26,65 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="font-semibold text-lg">Quick Links</h3>
             <div className="grid grid-cols-2 gap-2 text-sm">
-              <a href="#how-it-works" className="text-gray-300 hover:text-white transition-colors">How It Works</a>
-              <a href="#benefits" className="text-gray-300 hover:text-white transition-colors">Benefits</a>
-              <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">Testimonials</a>
-              <a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a>
-              <a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a>
+              <a href="#how-it-works" onClick={(e) => {
+                e.preventDefault();
+                if (window.location.pathname === '/') {
+                  document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#how-it-works';
+                }
+              }} className="text-gray-300 hover:text-white transition-colors">How It Works</a>
+              <a href="#benefits" onClick={(e) => {
+                e.preventDefault();
+                if (window.location.pathname === '/') {
+                  document.getElementById('benefits')?.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#benefits';
+                }
+              }} className="text-gray-300 hover:text-white transition-colors">Benefits</a>
+              <a href="#testimonials" onClick={(e) => {
+                e.preventDefault();
+                if (window.location.pathname === '/') {
+                  document.getElementById('testimonials')?.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#testimonials';
+                }
+              }} className="text-gray-300 hover:text-white transition-colors">Testimonials</a>
+              <a href="#about" onClick={(e) => {
+                e.preventDefault();
+                if (window.location.pathname === '/') {
+                  document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#about';
+                }
+              }} className="text-gray-300 hover:text-white transition-colors">About</a>
+              <a href="#contact" onClick={(e) => {
+                e.preventDefault();
+                if (window.location.pathname === '/') {
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#contact';
+                }
+              }} className="text-gray-300 hover:text-white transition-colors">Contact</a>
               <a href="/privacy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
               <a href="/terms" className="text-gray-300 hover:text-white transition-colors">Terms of Service</a>
-              <a href="/consultation" className="text-gray-300 hover:text-white transition-colors">Book Consultation</a>
+              <a href="#" onClick={(e) => {
+                e.preventDefault();
+                fetch('https://n8n.profutureconsulting.com/webhook/98b94774-0b06-404c-90bd-30a71b1001ed', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({})
+                })
+                .then(response => response.json())
+                .then(data => {
+                  if (data.URL) {
+                    window.open(data.URL, '_blank', 'noopener,noreferrer');
+                  }
+                })
+                .catch(() => {
+                  window.open('https://calendly.com/d/cw2x-p5n-5rf/30-ai-automation-consultation', '_blank', 'noopener,noreferrer');
+                });
+              }} className="text-gray-300 hover:text-white transition-colors">Book Consultation</a>
             </div>
           </div>
 
@@ -43,20 +94,16 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-gray-400" />
-                <a href="mailto:hello@profutureconsulting.com" className="text-gray-300 hover:text-white transition-colors text-sm">
-                  hello@profutureconsulting.com
+                        <a href="mailto:contact@profutureconsulting.com" className="text-gray-300 hover:text-white transition-colors text-sm">
+          contact@profutureconsulting.com
                 </a>
               </div>
               <div className="flex space-x-4 pt-2">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="https://www.linkedin.com/company/104982320" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                  <Twitter className="h-5 w-5" />
-                  <span className="sr-only">Twitter</span>
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <a href="https://www.facebook.com/people/ProFuture-Consulting/61567429329734/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                   <Facebook className="h-5 w-5" />
                   <span className="sr-only">Facebook</span>
                 </a>

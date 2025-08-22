@@ -196,7 +196,7 @@ export default function Home() {
       </section>
 
       {/* Trust Strip */}
-      <section className="content-container py-16">
+      <section id="trust" className="content-container py-16">
         <div className="text-center">
           <h3 className="text-lg font-medium text-gray-600 mb-8">Trusted by businesses using leading digital tools</h3>
           <div className="flex flex-wrap justify-center items-center gap-12 opacity-60">
@@ -303,7 +303,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="h-[50vh] flex items-center bg-gray-50">
+      <section id="about" className="h-[50vh] flex items-center bg-gray-50">
         <div className="content-container w-full">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Why SMBs chose to work with us</h2>
@@ -359,7 +359,7 @@ export default function Home() {
       </section>
 
             {/* CTA Band */}
-      <section className="py-24 flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-600">
+      <section id="contact" className="py-24 flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-600">
         <div className="content-container w-full text-center">
           <Card className="w-full bg-transparent text-white border-0 shadow-none">
           <CardHeader className="space-y-4">

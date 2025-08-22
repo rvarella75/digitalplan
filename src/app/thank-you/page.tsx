@@ -62,7 +62,30 @@ export default function ThankYouPage() {
 
           {/* Action Buttons */}
           <div className="flex justify-center mb-12">
-            <Button size="lg" className="text-lg px-8 py-6 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700">
+            <Button 
+              size="lg" 
+              className="text-lg px-8 py-6 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700"
+              onClick={async () => {
+                try {
+                  const response = await fetch('https://n8n.profutureconsulting.com/webhook/98b94774-0b06-404c-90bd-30a71b1001ed', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({})
+                  });
+                  
+                  if (response.ok) {
+                    const data = await response.json();
+                    if (data.URL) {
+                      window.open(data.URL, '_blank', 'noopener,noreferrer');
+                    }
+                  } else {
+                    window.open('https://calendly.com/d/cw2x-p5n-5rf/30-ai-automation-consultation', '_blank', 'noopener,noreferrer');
+                  }
+                } catch (error) {
+                  window.open('https://calendly.com/d/cw2x-p5n-5rf/30-ai-automation-consultation', '_blank', 'noopener,noreferrer');
+                }
+              }}
+            >
               <Calendar className="mr-2 h-5 w-5" />
               Book Free Consultation
             </Button>
