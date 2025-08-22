@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { MultiStepForm } from "@/components/multi-step-form"
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from "@/components/ui/dialog"
 import { 
   ArrowRight, 
   Target, 
@@ -57,6 +57,10 @@ export default function Home() {
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+                    <DialogTitle className="sr-only">Digital Transformation Plan Assessment</DialogTitle>
+                    <DialogDescription className="sr-only">
+                      Complete this assessment to receive your personalized digital transformation plan
+                    </DialogDescription>
                     <MultiStepForm />
                   </DialogContent>
                 </Dialog>
@@ -376,6 +380,10 @@ export default function Home() {
                 </Button>
               </DialogTrigger>
               <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+                <DialogTitle className="sr-only">Digital Transformation Plan Assessment</DialogTitle>
+                <DialogDescription className="sr-only">
+                  Complete this assessment to receive your personalized digital transformation plan
+                </DialogDescription>
                 <MultiStepForm />
               </DialogContent>
             </Dialog>
