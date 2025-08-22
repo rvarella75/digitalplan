@@ -30,10 +30,11 @@ const nextConfig: NextConfig = {
             key: 'Referrer-Policy',
             value: 'origin-when-cross-origin',
           },
-          {
-            key: 'Content-Security-Policy',
-            value: "script-src 'self' 'unsafe-eval' 'unsafe-inline';",
-          },
+          // CSP handled by vercel.json
+          // {
+          //   key: 'Content-Security-Policy',
+          //   value: "script-src 'self' 'unsafe-eval' 'unsafe-inline';",
+          // },
         ],
       },
     ];
